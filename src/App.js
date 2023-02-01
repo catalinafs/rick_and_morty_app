@@ -5,9 +5,13 @@ import Layout from "./components/Layout";
 
 function App() {
   const [state, setState]= useState([])
-    console.log({state})
+
+  console.log({state})
+
   const loginUser = true
+
   const url = 'https://rickandmortyapi.com/api/character'
+  
   useEffect(() => {
     fetch(url).then(answer => answer.json()).then(answerData => {
       setState(answerData.results)
