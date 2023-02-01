@@ -1,7 +1,11 @@
+import React from "react";
+import Layout from "./components/Layout";
+
 function App() {
   return (
     <div className='App'>
       <h1>Rick and Morty App</h1>
+      <Layout/>
     </div>
   );
 }
