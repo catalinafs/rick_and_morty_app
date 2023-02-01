@@ -2,6 +2,11 @@ function App() {
   return (
     <div className="App">
       <h1>Rick and Morty App</h1>  
+      <h1>Rick and Morty App</h1>  
+      <h1>Rick and Morty App</h1>  
+      <h1>Rick and Morty App</h1>  
+      <h1>Rick and Morty App</h1>  
+      <h1>Rick and Morty App</h1>  
     </div>
   );
 }
