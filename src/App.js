@@ -22,11 +22,11 @@ function App() {
   
   return (
     <div className='App'>
-      
       <Layout>
         {/* <Header loginUser={loginUser} /> */}     
         {/* <Footer /> */}
         {state.map((personaje) => {
+          console.log(personaje)
           const {id,name,status} = personaje
           return (
             <div>
