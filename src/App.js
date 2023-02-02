@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Layout from "./components/Layout";
 
 function App() {
@@ -29,7 +27,7 @@ function App() {
         {state.map((personaje) => {
           const {id,name,status} = personaje
           return (
-            <div>
+            <div className="card">
               <h2>{id}</h2>
               <h2>{name}</h2>
               <h2>{status}</h2>
