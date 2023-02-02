@@ -13,7 +13,9 @@ function App() {
   const url = 'https://rickandmortyapi.com/api/character'
   
   useEffect(() => {
-    fetch(url).then(answer => answer.json()).then(answerData => {
+    fetch(url)
+    .then(answer => answer.json())
+    .then(answerData => {
       setState(answerData.results)
     })
   }, [loginUser])
@@ -22,12 +24,11 @@ function App() {
     <div className='App'>
       
       <Layout>
-        
-
-        {/* <Header loginUser={loginUser} /> */}
-      
+        {/* <Header loginUser={loginUser} /> */}     
         {/* <Footer /> */}
-        
+        {state.map((personaje) => {
+          return <></>
+        })}
       </Layout>
     </div>
   );
