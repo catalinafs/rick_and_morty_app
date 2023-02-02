@@ -15,6 +15,13 @@ body {
 }
 
 .card{
-  border: 2px solid #000000;
+  border: 5px solid #000000;
+  border-radius: 5%;
   text-align: center;
+}
+
+.fatherCards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
