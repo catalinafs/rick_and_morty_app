@@ -23,12 +23,13 @@ function App() {
       <Layout>
         {state.map((personaje) => {
           console.log(personaje)
-          const {id,name,status} = personaje
+          const {id,name,status,species} = personaje
           return (
             <div className="card">
               <h2>{id}</h2>
               <h2>{name}</h2>
               <h2>{status}</h2>
+              <h2>{species}</h2>
             </div>
           )
         })}
