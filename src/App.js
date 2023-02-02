@@ -27,9 +27,14 @@ function App() {
         {/* <Header loginUser={loginUser} /> */}     
         {/* <Footer /> */}
         {state.map((personaje) => {
-          const name = personaje.name
-          console.log(name)
-          return <>{name}</>
+          const {id,name,status} = personaje
+          return (
+            <div>
+              <h2>{id}</h2>
+              <h2>{name}</h2>
+              <h2>{status}</h2>
+            </div>
+          )
         })}
       </Layout>
     </div>
