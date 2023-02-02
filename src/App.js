@@ -26,11 +26,11 @@ function App() {
           console.log(personaje.image)
           return (
             <div className="card">
-              <h2>{id}</h2>
+              <h4>{`ID: ${id}`}</h4>
               <h2>{name}</h2>
               <img src={image} alt='character image' loading="lazy" />
-              <h2>{status}</h2>
-              <h2>{species}</h2>
+              <h3>{status}</h3>
+              <h2>{`Species: ${species}`}</h2>
             </div>
           )
         })}
