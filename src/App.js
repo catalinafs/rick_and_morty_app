@@ -22,8 +22,6 @@ function App() {
     <div className='App'>
       
       <Layout>
-        {/* <Header loginUser={loginUser} /> */}     
-        {/* <Footer /> */}
         {state.map((personaje) => {
           const {id,name,status} = personaje
           return (
