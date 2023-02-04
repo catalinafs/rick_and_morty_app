@@ -24,18 +24,20 @@ function App() {
       <Header/>
       <Layout>
         {state.map((personaje) => {
-          const {id,name,status,species,image} = personaje
-          console.log(personaje.image)
+          const {id,name,status,species,image, gender, origin} = personaje
+          console.log(origin)
           return (
             <div className="card">
               <div className="image">
               <img src={image} className='characterImage' alt='character image' loading="lazy" />
               </div>
               <div className="info">
-              <h4>{`ID: ${id}`}</h4>
-              <h2>{name}</h2>
-              <h3>{status}</h3>
-              <h2>{`Species: ${species}`}</h2>
+              {/* <h4>{`ID: ${id}`}</h4> */}
+              <h3>{name}</h3>
+              <h3>{`Status: ${status}`}</h3>
+              <h3>{`Species: ${species}`}</h3>
+              {/* <h3>{`Gender: ${gender}`}</h3> */}
+              {/* <h3>{`Origin: ${origin.name}`}</h3> */}
               </div>
             </div>
           )
