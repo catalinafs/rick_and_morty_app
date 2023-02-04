@@ -3,7 +3,7 @@ import React from "react";
 const Header = ({ children }) => {
     return (<>
     <div className="header">
-        <input placeholder="search"></input>
+        <input className="inputName" placeholder="search"></input>
     </div>
     </>);
 };
