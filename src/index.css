@@ -56,3 +56,7 @@ body {
   border: 2px solid #60fb2c;
   border-radius: 5px;
 }
+
+.header{
+  padding-left: 40%;
+}
