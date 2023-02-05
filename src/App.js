@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "./components/Layout";
 import Header from "./components/Header";
+import Modal from "./components/Modal";
 
 function App() {
   const [state, setState]= useState([])
@@ -23,6 +24,7 @@ function App() {
     <div className='App'>
       <Header/>
       <Layout>
+        <Modal/>
         {state.map((personaje) => {
           const {id,name,status,species,image, gender, origin} = personaje
           console.log(origin)
