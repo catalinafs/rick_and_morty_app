@@ -10,11 +10,15 @@ function Modal() {
             <div className="modal">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h2>Título del modal</h2>
-                  <button onClick={() => setIsOpen(false)}>Cerrar</button>
+                  <h2>Programadores</h2>
                 </div>
                 <div className="modal-body">
-                  Contenido del modal
+                  Jufra
+                  Sebastian
+                  Catalina
+                </div>
+                <div className="modal-header1">
+                <button onClick={() => setIsOpen(false)}>Cerrar</button>
                 </div>
               </div>
             </div>
