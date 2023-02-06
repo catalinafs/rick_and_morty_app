@@ -5,7 +5,7 @@ function Modal() {
 
     return (
         <>
-          <button onClick={() => setIsOpen(true)} className="H">Abrir modal</button>
+          <button onClick={() => setIsOpen(true)} className="H">Open</button>
           {isOpen && (
             <div className="modal">
               <div className="modal-content">
@@ -16,7 +16,7 @@ function Modal() {
                   Jufra,
                   Sebastian,
                   Catalina
-                  <button onClick={() => setIsOpen(false)} className="M">Cerrar</button>
+                  <button onClick={() => setIsOpen(false)} className="M">Close</button>
                 </div>
               </div>
             </div>
