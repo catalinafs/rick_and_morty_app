@@ -16,9 +16,7 @@ function Modal() {
                   Jufra
                   Sebastian
                   Catalina
-                </div>
-                <div className="modal-header1">
-                <button onClick={() => setIsOpen(false)}>Cerrar</button>
+                  <button onClick={() => setIsOpen(false)}>Cerrar</button>
                 </div>
               </div>
             </div>

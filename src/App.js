@@ -22,9 +22,10 @@ function App() {
   
   return (
     <div className='App'>
+      <Modal/>
       <Header/>
       <Layout>
-        <Modal/>
+    
         {state.map((personaje) => {
           const {id,name,status,species,image, gender, origin} = personaje
           console.log(origin)
@@ -45,6 +46,7 @@ function App() {
           )
         })}
       </Layout>
+      
     </div>
   );
 }
