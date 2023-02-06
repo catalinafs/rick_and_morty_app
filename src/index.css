@@ -82,11 +82,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   border-radius: 10px;
 }
 
-.modal-header1 {
+.modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid ;
   background-color: #000000;
   margin-bottom: 20px;
+}
+
+.H{
+  background-color: #000000;
+}
+
+.M{
+  background-color: #000000;
 }
