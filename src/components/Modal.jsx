@@ -13,9 +13,9 @@ function Modal() {
                   <h2>Programadores</h2>
                 </div>
                 <div className="modal-body">
-                  Jufra
-                  Sebastian
-                  Catalina
+                  Jufra,
+                  Sebastian,
+                  Catalina,
                   <button onClick={() => setIsOpen(false)}>Cerrar</button>
                 </div>
               </div>
