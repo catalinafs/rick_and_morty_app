@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Layout from "./components/Layout";
-import Header from "./components/Header";
-import Modal from "./components/Modal";
+import Layout from "./assets/components/Layout/Layout.jsx";
+import Header from "./assets/components/Header/Header.jsx";
+import Modal from "./assets/components/Modal/Modal.jsx";
 
 function App() {
   const [state, setState]= useState([])
 
-  console.log({state})
-
-  const loginUser = true
+  const LoginUser = true;
 
   const url = 'https://rickandmortyapi.com/api/character'
   
@@ -18,7 +16,7 @@ function App() {
     .then(answerData => {
       setState(answerData.results)
     })
-  }, [loginUser])
+  }, [LoginUser])
   
   return (
     <div className='App'>
@@ -35,12 +33,10 @@ function App() {
               <img src={image} className='characterImage' alt='character image' loading="lazy" />
               </div>
               <div className="info">
-              {/* <h4>{`ID: ${id}`}</h4> */}
               <h3>{name}</h3>
               <h3>{`Status: ${status}`}</h3>
               <h3>{`Species: ${species}`}</h3>
               <h3>{`Gender: ${gender}`}</h3>
-              {/* <h3>{`Origin: ${origin.name}`}</h3> */}
               </div>
             </div>
           )

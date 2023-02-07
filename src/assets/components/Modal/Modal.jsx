@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import './index.css';
 
 function Modal() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
-          <button onClick={() => setIsOpen(true)} className="H">Open</button>
+          <button onClick={() => setIsOpen(!isOpen)}>Open</button>
           {isOpen && (
             <div className="modal">
               <div className="modal-content">
@@ -16,7 +17,7 @@ function Modal() {
                   Jufra,
                   Sebastian,
                   Catalina
-                  <button onClick={() => setIsOpen(false)} className="M">Close</button>
+                  <button onClick={() => setIsOpen(!isOpen)}>Close</button>
                 </div>
               </div>
             </div>
