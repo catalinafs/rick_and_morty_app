@@ -23,8 +23,15 @@ function App() {
       <Layout>
     
         {state.map((personaje) => {
-          const {id,name,status,species,image, gender, origin} = personaje
-          console.log(origin)
+          const {
+            name,
+            status,
+            species,
+            image, 
+            gender, 
+            origin
+          } = personaje
+
           return (
             <div className="card">
               <div className="image">
