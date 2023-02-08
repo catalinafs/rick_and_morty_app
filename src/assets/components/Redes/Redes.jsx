@@ -14,5 +14,4 @@ const Redes = () => {
     
 }
 
-export default Redes;
 
