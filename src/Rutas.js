@@ -6,16 +6,39 @@ const Notes = () => <h1>Notes</h1>
 
 const Users = () => <h1>Users</h1>
 
+const inlineStyles = {
+    padding: 5 
+}
+
 const Rutas = () => {
-    const [page, setPage] = usesTate('home')
+    const [page] = usesTate('home')
 
     const getContent = () => {
         if (page == 'Home' ) {
             return <Home />
         }if (page == 'Users' ) {
             return <Users />
-        }if (page == 'Notes'){
+        }else if (page == 'Notes'){
             return <Notes />
         }   
         }
+
+        return (<>
+        <div>
+            <header>
+                <a href="#" onClick={() => {}} style={inlineStyles}>
+                    Home
+                </a>
+                <a href="#" onClick={() => {}} style={inlineStyles}>
+                    Notes
+                </a>
+                <a href="#" onClick={() => {}} style={inlineStyles}>
+                    Users
+                </a>
+            </header>
+            {getContent()}
+        </div>
+        </>)
 }   
+
+export default Rutas;
