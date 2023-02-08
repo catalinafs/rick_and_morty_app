@@ -5,9 +5,9 @@ import './index.css';
 const Header = () => {
     return (<>
     <div className="header" >
-        <Modal/>
         <input className="inputName" placeholder="search"></input>
-        <a href="#">click</a>
+        <Modal/>
+        
     </div>
     </>);
 };

@@ -20,8 +20,9 @@ function App() {
   return (
     <div className='App'>
       
-      <Header/>
+      <Header/> 
       <Layout>
+        
     
         {state.map((personaje) => {
           const {
@@ -47,8 +48,8 @@ function App() {
             </div>
           )
         })}
-      </Layout>
       
+      </Layout>
     </div>
   );
 }

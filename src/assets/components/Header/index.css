@@ -1,9 +1,8 @@
 .header {
     height: 100px;
     padding-left: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
+    
 }
 
 .inputName {
