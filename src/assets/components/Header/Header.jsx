@@ -4,7 +4,8 @@ import './index.css';
 
 const Header = ({ children }) => {
     return (<>
-    <div className="header">
+    <div className="header" >
+        { children }
         <input className="inputName" placeholder="search"></input>
         <Modal/>
     </div>
