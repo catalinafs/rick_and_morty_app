@@ -39,10 +39,10 @@ function App() {
               <img src={image} className='characterImage' alt='character image' loading="lazy" />
               </div>
               <div className="info">
-              <h3>{name}</h3>
-              <h3>{`Status: ${status}`}</h3>
-              <h3>{`Species: ${species}`}</h3>
-              <h3>{`Gender: ${gender}`}</h3>
+              <h3 className="Name">{name}</h3>
+              <h3>Status: <span>{status}</span></h3>
+              <h3>Species: <span>{species}</span></h3>
+              <h3>Gender: <span>{gender}</span></h3>
               </div>
             </div>
           )
