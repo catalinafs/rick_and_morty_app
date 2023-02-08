@@ -11,19 +11,19 @@ const inlineStyles = {
 }
 
 const Rutas = () => {
-    const [page] = usesTate('home')
+    const [page] = usesTate('Home')
 
     const getContent = () => {
         if (page == 'Home' ) {
             return <Home />
-        }if (page == 'Users' ) {
+        } else if (page == 'Users' ) {
             return <Users />
-        }else if (page == 'Notes'){
+        } else if (page == 'Notes') {
             return <Notes />
         }   
         }
 
-        return (<>
+        return (
         <div>
             <header>
                 <a href="#" onClick={() => {}} style={inlineStyles}>
@@ -38,7 +38,7 @@ const Rutas = () => {
             </header>
             {getContent()}
         </div>
-        </>)
+        )
 }   
 
-export default Rutas;
+export default Rutas;   
