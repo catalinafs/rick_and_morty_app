@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lucida+Sans');
-
 :root {
-  --1: #60fb2c;
+  --1: #ffffff;
   --2: #000000;
+  --3: #a8b1a5;
+  --4: #0f49ff;
 }
 
 *{
   padding: 0;
   margin: 5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family: monospace;
   color: var(--1);
 }
 
@@ -51,4 +51,12 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+}
+
+.Name {
+  color: var(--4);
+}
+
+h3 span {
+  color: var(--3);
 }

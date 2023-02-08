@@ -2,12 +2,12 @@ import React from "react";
 import Modal from "../Modal/Modal.jsx";
 import './index.css';
 
-const Header = ({ children }) => {
+const Header = () => {
     return (<>
     <div className="header" >
-        { children }
-        <input className="inputName" placeholder="search"></input>
         <Modal/>
+        <input className="inputName" placeholder="search"></input>
+        <a href="#">click</a>
     </div>
     </>);
 };
