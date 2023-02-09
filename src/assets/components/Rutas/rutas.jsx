@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Home = () => <h1>Home page</h1>
 
@@ -7,11 +7,11 @@ const Notes = () => <h1>Notes</h1>
 const Users = () => <h1>Users</h1>
 
 const inlineStyles = {
-    padding: 5 
+    padding: '5px' 
 }
 
 const Rutas = () => {
-    const [page] = usesTate('Home')
+    const [page] = useState('Home')
 
     const getContent = () => {
         if (page == 'Home' ) {
@@ -35,6 +35,7 @@ const Rutas = () => {
                 <a href="#" onClick={() => {}} style={inlineStyles}>
                     Users
                 </a>
+               
             </header>
             {getContent()}
         </div>
