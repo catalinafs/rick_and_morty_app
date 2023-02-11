@@ -1,45 +1,68 @@
-import React, { useState } from "react";
+import React from "react";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
-const Home = () => <h1>Home page</h1>
-
-const Notes = () => <h1>Notes</h1>
-
-const Users = () => <h1>Users</h1>
-
-const inlineStyles = {
-    padding: '5px' 
-}
-
-const Rutas = () => {
-    const [page] = useState('Home')
-
-    const getContent = () => {
-        if (page == 'Home' ) {
-            return <Home />
-        } else if (page == 'Users' ) {
-            return <Users />
-        } else if (page == 'Notes') {
-            return <Notes />
-        }   
-        }
-
-        return (
+  export default function BasicExample() {
+    return (
+      <Router>
         <div>
-            <header>
-                <a href="#" onClick={() => {}} style={inlineStyles}>
-                    Home
-                </a>
-                <a href="#" onClick={() => {}} style={inlineStyles}>
-                    Notes
-                </a>
-                <a href="#" onClick={() => {}} style={inlineStyles}>
-                    Users
-                </a>
-               
-            </header>
-            {getContent()}
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+          </ul>
+  
+          <hr />
+  
+    
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+          </Switch>
         </div>
-        )
-}   
-
-export default Rutas;   
+      </Router>
+    );
+  }
+  
+ 
+  
+  function Home() {
+    return (
+      <div>
+        <h2>Home</h2>
+      </div>
+    );
+  }
+  
+  function About() {
+    return (
+      <div>
+        <h2>About</h2>
+      </div>
+    );
+  }
+  
+  function Dashboard() {
+    return (
+      <div>
+        <h2>Dashboard</h2>
+      </div>
+    );
+  }

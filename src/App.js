@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Layout from "./assets/components/Layout/Layout.jsx";
 import Header from "./assets/components/Header/Header.jsx";
+import Modal from "./assets/components/Modal/Modal.jsx";
+import Rutas from "./assets/components/Rutas/Rutas.jsx";
+
 
 function App() {
   const [state, setState]= useState([])
